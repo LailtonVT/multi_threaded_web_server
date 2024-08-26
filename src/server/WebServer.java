@@ -43,6 +43,7 @@ public class WebServer {
             // Aceita conexões enquanto o executor não é encerrado
             while (!executor.isShutdown()) {
                 Socket clientSocket = serverSocket.accept();
+
                 // Cada requisição de cliente é tratada por uma nova tarefa
                 executor.submit(new HttpRequestHandler(clientSocket));
             }
