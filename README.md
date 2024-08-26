@@ -14,7 +14,7 @@ Este é um projeto de servidor web multi-threaded simples em Java, que recebe do
    ![alt text](<imagens/MultiThreadedWebServerUML/server/Class Diagram1.jpg>)
 
    
-1. Enviando uma Requisição
+### 1. Enviando uma Requisição
 
 Você pode enviar uma requisição HTTP ao servidor de várias maneiras:
 
@@ -24,7 +24,7 @@ Usando curl no terminal:curl "http://localhost:8080?num1=10&num2=5"
 
 Usando uma ferramenta como o Postman.
 
-2. Exemplo de Resposta
+### 2. Exemplo de Resposta
  
 Quando você acessa a URL http://localhost:8080?num1=10&num2=5, o servidor retorna a seguinte resposta no corpo da requisição:
 
@@ -40,26 +40,26 @@ Divisão: 2.0
 
 Se num2 for 0, a resposta incluirá uma mensagem de erro indicando que a divisão por zero não é possível.
 
-3. Exemplo de Erro
+### 3. Exemplo de Erro
 
 Caso os parâmetros num1 ou num2 estejam ausentes, o servidor retorna:
 
 Parâmetros 'num1' e 'num2' são obrigatórios na URL.
 
 ## Como Rodar o Projeto
-1. Pré-requisitos
+### 1. Pré-requisitos
 
 Java: Certifique-se de ter o JDK 8 ou superior instalado.
 
 Compilador Java: Você pode compilar o projeto diretamente pela linha de comando.
 
-2. Compilar o Projeto
+### 2. Compilar o Projeto
 
 Navegue até o diretório raiz do projeto e compile os arquivos Java:
 
 javac -d bin src/server/*.java src/Main.java
 
-3. Executar o Servidor
+### 3. Executar o Servidor
     
 Após a compilação, você pode iniciar o servidor executando o seguinte comando:
 
